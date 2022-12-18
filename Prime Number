@@ -1,0 +1,32 @@
+QUESTION:
+Write a C program to find whether the given number is Prime number or not.
+
+Sample Input:
+2
+
+Sample Output:
+Prime
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,count=0;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            count++;
+        }
+    }
+    if(count==2)
+{
+    cout<<"Prime";
+}
+else
+{
+    cout<<"Not Prime";
+}
+}
