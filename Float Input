@@ -1,0 +1,19 @@
+QUESTION:
+Write a program to get a float value from the user and display it.
+
+Sample Input:
+23.115
+
+Sample Output:
+23.115000
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a;
+    cin>>a;
+    cout<<a;
+    return 0;
+}
