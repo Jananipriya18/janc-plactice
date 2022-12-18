@@ -1,0 +1,48 @@
+QUESTION:
+Abraham after getting his first salary decided to go to bank to deposit his savings in his account. Before that he does not know the process that are undertaken in bank. Help him in understanding the process of depositing money and withdrawal of money. Use switch to implement this concept.
+
+Input & Output Format:
+Input consists of three integers.
+First input consists of amount in the account.
+Second input consists of the switch case
+the value 1 corresponds to deposit 
+the value 2 corresponds to withdraw.
+Third input consists of the amount.
+The output consists of one integer.
+If the amount is less than the withdraw amount display "Insufficient Balance".
+If the value is more than the switch statement cases display "Invalid Input".
+
+Sample Input:
+1000
+1
+500
+
+Sample Output:
+1500
+
+CODE:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int b,n,a,x;
+    cin>>b>>n>>a;
+    switch (n)
+    {
+        case 1:
+        if(b>a)
+        {
+            b=b+a;
+            cout<<b;
+        }
+        break;
+        case 2:
+        if(b<a)
+        {
+            cout<<"Insufficient Balance";
+        }
+        break;
+        default:
+        cout<<"Invalid input";
+    }
+}    
